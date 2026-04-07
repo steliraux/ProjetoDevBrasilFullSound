@@ -28,304 +28,311 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
-            label11 = new Label();
-            label12 = new Label();
-            label13 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            richTextBox1 = new RichTextBox();
-            button2 = new Button();
-            button3 = new Button();
+            btnFechar = new Button();
+            LbNomeDoCliente = new Label();
+            LbCelular = new Label();
+            LbStatus = new Label();
+            LbAddCliente = new Label();
+            LbNomeCliente = new Label();
+            LbCelular2 = new Label();
+            LbTipoDeServiço = new Label();
+            LbStatusDoCliente = new Label();
+            LbTipoDePagamento = new Label();
+            txtNomeDoCliente = new TextBox();
+            txtCelular = new TextBox();
+            txtTipoDeServiço = new TextBox();
+            txtStatusDoCliente = new TextBox();
+            txtTipoDePagamento = new TextBox();
+            btnAdicionarCliente = new Button();
+            btnLinkDeAcessoAoWhatsapp = new Button();
+            dgvClientes = new DataGridView();
+            LbOrçamentos = new Label();
+            lbHome = new Label();
+            lbCliente = new Label();
+            lbAgenda = new Label();
+            ((System.ComponentModel.ISupportInitialize)dgvClientes).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // btnFechar
             // 
-            button1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.FromArgb(255, 128, 0);
-            button1.Location = new Point(12, 24);
-            button1.Name = "button1";
-            button1.Size = new Size(22, 23);
-            button1.TabIndex = 0;
-            button1.Text = "X";
-            button1.UseVisualStyleBackColor = true;
+            btnFechar.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnFechar.ForeColor = Color.FromArgb(255, 128, 0);
+            btnFechar.Location = new Point(12, 30);
+            btnFechar.Name = "btnFechar";
+            btnFechar.Size = new Size(22, 23);
+            btnFechar.TabIndex = 0;
+            btnFechar.Text = "X";
+            btnFechar.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // LbNomeDoCliente
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(255, 128, 0);
-            label1.Location = new Point(58, 24);
-            label1.Name = "label1";
-            label1.Size = new Size(50, 20);
-            label1.TabIndex = 1;
-            label1.Text = "Home";
+            LbNomeDoCliente.AutoSize = true;
+            LbNomeDoCliente.ForeColor = Color.FromArgb(255, 128, 0);
+            LbNomeDoCliente.Location = new Point(12, 105);
+            LbNomeDoCliente.Name = "LbNomeDoCliente";
+            LbNomeDoCliente.Size = new Size(100, 15);
+            LbNomeDoCliente.TabIndex = 5;
+            LbNomeDoCliente.Text = "Nome do Cliente:";
             // 
-            // label2
+            // LbCelular
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.FromArgb(255, 128, 0);
-            label2.Location = new Point(159, 24);
-            label2.Name = "label2";
-            label2.Size = new Size(55, 20);
-            label2.TabIndex = 2;
-            label2.Text = "Cliente";
+            LbCelular.AutoSize = true;
+            LbCelular.ForeColor = Color.FromArgb(255, 128, 0);
+            LbCelular.Location = new Point(274, 105);
+            LbCelular.Name = "LbCelular";
+            LbCelular.Size = new Size(47, 15);
+            LbCelular.TabIndex = 6;
+            LbCelular.Text = "Celular:";
             // 
-            // label3
+            // LbStatus
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 11.25F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.FromArgb(255, 128, 0);
-            label3.Location = new Point(274, 24);
-            label3.Name = "label3";
-            label3.Size = new Size(61, 20);
-            label3.TabIndex = 3;
-            label3.Text = "Agenda";
+            LbStatus.AutoSize = true;
+            LbStatus.ForeColor = Color.FromArgb(255, 128, 0);
+            LbStatus.Location = new Point(435, 105);
+            LbStatus.Name = "LbStatus";
+            LbStatus.Size = new Size(42, 15);
+            LbStatus.TabIndex = 7;
+            LbStatus.Text = "Status:";
+            LbStatus.Click += label7_Click;
             // 
-            // label4
+            // LbAddCliente
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 11.25F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.FromArgb(255, 128, 0);
-            label4.Location = new Point(380, 24);
-            label4.Name = "label4";
-            label4.Size = new Size(89, 20);
-            label4.TabIndex = 4;
-            label4.Text = "Orçamentos";
+            LbAddCliente.AutoSize = true;
+            LbAddCliente.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LbAddCliente.ForeColor = Color.FromArgb(255, 128, 0);
+            LbAddCliente.Location = new Point(12, 313);
+            LbAddCliente.Name = "LbAddCliente";
+            LbAddCliente.Size = new Size(90, 20);
+            LbAddCliente.TabIndex = 8;
+            LbAddCliente.Text = "Add Cliente:";
             // 
-            // label5
+            // LbNomeCliente
             // 
-            label5.AutoSize = true;
-            label5.ForeColor = Color.FromArgb(255, 128, 0);
-            label5.Location = new Point(12, 105);
-            label5.Name = "label5";
-            label5.Size = new Size(100, 15);
-            label5.TabIndex = 5;
-            label5.Text = "Nome do Cliente:";
+            LbNomeCliente.AutoSize = true;
+            LbNomeCliente.ForeColor = Color.FromArgb(255, 128, 0);
+            LbNomeCliente.Location = new Point(12, 351);
+            LbNomeCliente.Name = "LbNomeCliente";
+            LbNomeCliente.Size = new Size(100, 15);
+            LbNomeCliente.TabIndex = 9;
+            LbNomeCliente.Text = "Nome do Cliente:";
             // 
-            // label6
+            // LbCelular2
             // 
-            label6.AutoSize = true;
-            label6.ForeColor = Color.FromArgb(255, 128, 0);
-            label6.Location = new Point(274, 105);
-            label6.Name = "label6";
-            label6.Size = new Size(47, 15);
-            label6.TabIndex = 6;
-            label6.Text = "Celular:";
+            LbCelular2.AutoSize = true;
+            LbCelular2.ForeColor = Color.FromArgb(255, 128, 0);
+            LbCelular2.Location = new Point(12, 407);
+            LbCelular2.Name = "LbCelular2";
+            LbCelular2.Size = new Size(47, 15);
+            LbCelular2.TabIndex = 10;
+            LbCelular2.Text = "Celular:";
+            LbCelular2.Click += label10_Click;
             // 
-            // label7
+            // LbTipoDeServiço
             // 
-            label7.AutoSize = true;
-            label7.ForeColor = Color.FromArgb(255, 128, 0);
-            label7.Location = new Point(435, 105);
-            label7.Name = "label7";
-            label7.Size = new Size(42, 15);
-            label7.TabIndex = 7;
-            label7.Text = "Status:";
-            label7.Click += label7_Click;
+            LbTipoDeServiço.AutoSize = true;
+            LbTipoDeServiço.ForeColor = Color.FromArgb(255, 128, 0);
+            LbTipoDeServiço.Location = new Point(12, 465);
+            LbTipoDeServiço.Name = "LbTipoDeServiço";
+            LbTipoDeServiço.Size = new Size(91, 15);
+            LbTipoDeServiço.TabIndex = 11;
+            LbTipoDeServiço.Text = "Tipo de Serviço:";
             // 
-            // label8
+            // LbStatusDoCliente
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.ForeColor = Color.FromArgb(255, 128, 0);
-            label8.Location = new Point(12, 313);
-            label8.Name = "label8";
-            label8.Size = new Size(90, 20);
-            label8.TabIndex = 8;
-            label8.Text = "Add Cliente:";
+            LbStatusDoCliente.AutoSize = true;
+            LbStatusDoCliente.ForeColor = Color.FromArgb(255, 128, 0);
+            LbStatusDoCliente.Location = new Point(12, 520);
+            LbStatusDoCliente.Name = "LbStatusDoCliente";
+            LbStatusDoCliente.Size = new Size(99, 15);
+            LbStatusDoCliente.TabIndex = 12;
+            LbStatusDoCliente.Text = "Status do Cliente:";
+            LbStatusDoCliente.Click += label12_Click;
             // 
-            // label9
+            // LbTipoDePagamento
             // 
-            label9.AutoSize = true;
-            label9.ForeColor = Color.FromArgb(255, 128, 0);
-            label9.Location = new Point(12, 351);
-            label9.Name = "label9";
-            label9.Size = new Size(100, 15);
-            label9.TabIndex = 9;
-            label9.Text = "Nome do Cliente:";
+            LbTipoDePagamento.AutoSize = true;
+            LbTipoDePagamento.ForeColor = Color.FromArgb(255, 128, 0);
+            LbTipoDePagamento.Location = new Point(12, 577);
+            LbTipoDePagamento.Name = "LbTipoDePagamento";
+            LbTipoDePagamento.Size = new Size(114, 15);
+            LbTipoDePagamento.TabIndex = 13;
+            LbTipoDePagamento.Text = "Tipo de pagamento:";
             // 
-            // label10
+            // txtNomeDoCliente
             // 
-            label10.AutoSize = true;
-            label10.ForeColor = Color.FromArgb(255, 128, 0);
-            label10.Location = new Point(12, 407);
-            label10.Name = "label10";
-            label10.Size = new Size(44, 15);
-            label10.TabIndex = 10;
-            label10.Text = "Celular";
-            label10.Click += label10_Click;
+            txtNomeDoCliente.Location = new Point(12, 381);
+            txtNomeDoCliente.Name = "txtNomeDoCliente";
+            txtNomeDoCliente.Size = new Size(228, 23);
+            txtNomeDoCliente.TabIndex = 14;
             // 
-            // label11
+            // txtCelular
             // 
-            label11.AutoSize = true;
-            label11.ForeColor = Color.FromArgb(255, 128, 0);
-            label11.Location = new Point(12, 465);
-            label11.Name = "label11";
-            label11.Size = new Size(88, 15);
-            label11.TabIndex = 11;
-            label11.Text = "Tipo de Serviço";
+            txtCelular.Location = new Point(12, 425);
+            txtCelular.Name = "txtCelular";
+            txtCelular.Size = new Size(228, 23);
+            txtCelular.TabIndex = 15;
             // 
-            // label12
+            // txtTipoDeServiço
             // 
-            label12.AutoSize = true;
-            label12.ForeColor = Color.FromArgb(255, 128, 0);
-            label12.Location = new Point(12, 520);
-            label12.Name = "label12";
-            label12.Size = new Size(96, 15);
-            label12.TabIndex = 12;
-            label12.Text = "Status do Cliente";
-            label12.Click += label12_Click;
+            txtTipoDeServiço.Location = new Point(12, 483);
+            txtTipoDeServiço.Name = "txtTipoDeServiço";
+            txtTipoDeServiço.Size = new Size(228, 23);
+            txtTipoDeServiço.TabIndex = 16;
             // 
-            // label13
+            // txtStatusDoCliente
             // 
-            label13.AutoSize = true;
-            label13.ForeColor = Color.FromArgb(255, 128, 0);
-            label13.Location = new Point(12, 577);
-            label13.Name = "label13";
-            label13.Size = new Size(111, 15);
-            label13.TabIndex = 13;
-            label13.Text = "Tipo de pagamento";
+            txtStatusDoCliente.Location = new Point(12, 538);
+            txtStatusDoCliente.Name = "txtStatusDoCliente";
+            txtStatusDoCliente.Size = new Size(228, 23);
+            txtStatusDoCliente.TabIndex = 17;
             // 
-            // textBox1
+            // txtTipoDePagamento
             // 
-            textBox1.Location = new Point(12, 369);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(228, 23);
-            textBox1.TabIndex = 14;
+            txtTipoDePagamento.Location = new Point(12, 595);
+            txtTipoDePagamento.Name = "txtTipoDePagamento";
+            txtTipoDePagamento.Size = new Size(228, 23);
+            txtTipoDePagamento.TabIndex = 18;
             // 
-            // textBox2
+            // btnAdicionarCliente
             // 
-            textBox2.Location = new Point(12, 425);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(228, 23);
-            textBox2.TabIndex = 15;
+            btnAdicionarCliente.BackColor = Color.White;
+            btnAdicionarCliente.Font = new Font("Segoe UI", 12F, FontStyle.Underline, GraphicsUnit.Point, 0);
+            btnAdicionarCliente.ForeColor = Color.FromArgb(255, 128, 0);
+            btnAdicionarCliente.Location = new Point(301, 369);
+            btnAdicionarCliente.Name = "btnAdicionarCliente";
+            btnAdicionarCliente.Size = new Size(214, 79);
+            btnAdicionarCliente.TabIndex = 20;
+            btnAdicionarCliente.Text = "Adicionar Cliente";
+            btnAdicionarCliente.UseVisualStyleBackColor = false;
+            btnAdicionarCliente.Click += btnAdicionarCliente_Click;
             // 
-            // textBox3
+            // btnLinkDeAcessoAoWhatsapp
             // 
-            textBox3.Location = new Point(12, 483);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(228, 23);
-            textBox3.TabIndex = 16;
+            btnLinkDeAcessoAoWhatsapp.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnLinkDeAcessoAoWhatsapp.ForeColor = Color.FromArgb(255, 128, 0);
+            btnLinkDeAcessoAoWhatsapp.Location = new Point(311, 473);
+            btnLinkDeAcessoAoWhatsapp.Name = "btnLinkDeAcessoAoWhatsapp";
+            btnLinkDeAcessoAoWhatsapp.Size = new Size(192, 41);
+            btnLinkDeAcessoAoWhatsapp.TabIndex = 21;
+            btnLinkDeAcessoAoWhatsapp.Text = "Link de acesso ao whatsapp";
+            btnLinkDeAcessoAoWhatsapp.UseVisualStyleBackColor = true;
+            btnLinkDeAcessoAoWhatsapp.Click += button3_Click;
             // 
-            // textBox4
+            // dgvClientes
             // 
-            textBox4.Location = new Point(12, 538);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(228, 23);
-            textBox4.TabIndex = 17;
+            dgvClientes.BackgroundColor = Color.White;
+            dgvClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvClientes.Location = new Point(12, 123);
+            dgvClientes.Name = "dgvClientes";
+            dgvClientes.Size = new Size(532, 187);
+            dgvClientes.TabIndex = 22;
             // 
-            // textBox5
+            // LbOrçamentos
             // 
-            textBox5.Location = new Point(12, 595);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(228, 23);
-            textBox5.TabIndex = 18;
+            LbOrçamentos.AutoSize = true;
+            LbOrçamentos.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LbOrçamentos.Location = new Point(382, 32);
+            LbOrçamentos.Name = "LbOrçamentos";
+            LbOrçamentos.Size = new Size(95, 21);
+            LbOrçamentos.TabIndex = 30;
+            LbOrçamentos.Text = "Orçamentos";
             // 
-            // richTextBox1
+            // lbHome
             // 
-            richTextBox1.Location = new Point(12, 123);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(524, 169);
-            richTextBox1.TabIndex = 19;
-            richTextBox1.Text = "";
+            lbHome.AutoSize = true;
+            lbHome.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbHome.Location = new Point(65, 32);
+            lbHome.Name = "lbHome";
+            lbHome.Size = new Size(52, 21);
+            lbHome.TabIndex = 31;
+            lbHome.Text = "Home";
             // 
-            // button2
+            // lbCliente
             // 
-            button2.BackColor = Color.FromArgb(255, 128, 0);
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(300, 369);
-            button2.Name = "button2";
-            button2.Size = new Size(214, 79);
-            button2.TabIndex = 20;
-            button2.Text = "Adicionar Cliente";
-            button2.UseVisualStyleBackColor = false;
+            lbCliente.AutoSize = true;
+            lbCliente.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbCliente.Location = new Point(166, 31);
+            lbCliente.Name = "lbCliente";
+            lbCliente.Size = new Size(58, 21);
+            lbCliente.TabIndex = 32;
+            lbCliente.Text = "Cliente";
+            lbCliente.Click += lbCliente_Click;
             // 
-            // button3
+            // lbAgenda
             // 
-            button3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.FromArgb(255, 128, 0);
-            button3.Location = new Point(311, 473);
-            button3.Name = "button3";
-            button3.Size = new Size(192, 41);
-            button3.TabIndex = 21;
-            button3.Text = "Link de acesso ao whatsapp";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            lbAgenda.AutoSize = true;
+            lbAgenda.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbAgenda.Location = new Point(274, 32);
+            lbAgenda.Name = "lbAgenda";
+            lbAgenda.Size = new Size(63, 21);
+            lbAgenda.TabIndex = 33;
+            lbAgenda.Text = "Agenda";
             // 
             // TelaCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(580, 662);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(richTextBox1);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(label13);
-            Controls.Add(label12);
-            Controls.Add(label11);
-            Controls.Add(label10);
-            Controls.Add(label9);
-            Controls.Add(label8);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(button1);
+            ClientSize = new Size(556, 662);
+            Controls.Add(lbAgenda);
+            Controls.Add(lbCliente);
+            Controls.Add(lbHome);
+            Controls.Add(LbOrçamentos);
+            Controls.Add(dgvClientes);
+            Controls.Add(btnLinkDeAcessoAoWhatsapp);
+            Controls.Add(btnAdicionarCliente);
+            Controls.Add(txtTipoDePagamento);
+            Controls.Add(txtStatusDoCliente);
+            Controls.Add(txtTipoDeServiço);
+            Controls.Add(txtCelular);
+            Controls.Add(txtNomeDoCliente);
+            Controls.Add(LbTipoDePagamento);
+            Controls.Add(LbStatusDoCliente);
+            Controls.Add(LbTipoDeServiço);
+            Controls.Add(LbCelular2);
+            Controls.Add(LbNomeCliente);
+            Controls.Add(LbAddCliente);
+            Controls.Add(LbStatus);
+            Controls.Add(LbCelular);
+            Controls.Add(LbNomeDoCliente);
+            Controls.Add(btnFechar);
             ForeColor = Color.White;
             Name = "TelaCliente";
             Text = "TelaCliente";
+            ((System.ComponentModel.ISupportInitialize)dgvClientes).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
+        private Button btnFechar;
+        private Label LbNomeDoCliente;
+        private Label LbCelular;
+        private Label LbStatus;
+        private Label LbAddCliente;
+        private Label LbNomeCliente;
+        private Label LbCelular2;
+        private Label LbTipoDeServiço;
+        private Label LbStatusDoCliente;
+        private Label LbTipoDePagamento;
+        private TextBox txtNomeDoCliente;
+        private TextBox txtCelular;
+        private TextBox txtTipoDeServiço;
+        private TextBox txtStatusDoCliente;
+        private TextBox txtTipoDePagamento;
+        private Button btnAdicionarCliente;
+        private Button btnLinkDeAcessoAoWhatsapp;
+        private DataGridView dgvClientes;
+        private Button button2;
+        private Button button3;
+        private Button button4;
         private Label label1;
         private Label label2;
         private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private Label label7;
-        private Label label8;
-        private Label label9;
-        private Label label10;
-        private Label label11;
-        private Label label12;
-        private Label label13;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private RichTextBox richTextBox1;
-        private Button button2;
-        private Button button3;
+        private Label LbOrçamentos;
+        private Label lbHome;
+        private Label lbCliente;
+        private Label lbAgenda;
     }
 }

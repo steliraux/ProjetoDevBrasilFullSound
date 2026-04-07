@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace Tela1_Acesso
 {
     public partial class TelaCliente : Form
     {
+        string conexao = " Source=localhost;User=root;pwd =; Database=telacliente";
         public TelaCliente()
         {
             InitializeComponent();
@@ -33,6 +35,36 @@ namespace Tela1_Acesso
         }
 
         private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAdicionarCliente_Click(object sender, EventArgs e)
+        {
+            MySqlConnection con = new MySqlConnection(conexao);
+            if (txtNomeDoCliente.Text == "" || txtCelular.Text == "" || txtTipoDeServiço.Text == "" || txtTipoDePagamento.Text ==""); ;
+            {
+                MessageBox.Show("Preencha todos os campos");
+                return;
+            }
+            con.Open();
+
+            string sql =
+                @"INSERT INTO Clientes (Nome, Celular, Tipodeservico, Status, Tipodepagamento)
+                  Values (@nome, @celular, @servico, @status, @pagamento)";
+            cmd
+            dgvClientes.Rows.Add(txtNomeDoCliente, txtCelular, "Ativo");
+            txtNomeDoCliente.Clear();
+            txtCelular.Clear();
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbCliente_Click(object sender, EventArgs e)
         {
 
         }

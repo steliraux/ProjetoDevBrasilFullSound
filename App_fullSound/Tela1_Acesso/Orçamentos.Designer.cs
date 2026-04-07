@@ -63,6 +63,7 @@
             // 
             // lblEmissao
             // 
+<<<<<<< HEAD
             lblEmissao.AutoSize = true;
             lblEmissao.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblEmissao.ForeColor = SystemColors.ButtonHighlight;
@@ -71,9 +72,18 @@
             lblEmissao.Size = new Size(265, 21);
             lblEmissao.TabIndex = 5;
             lblEmissao.Text = "Emissão de comprovante de serviços";
+=======
+            label2.AutoSize = true;
+            label2.Location = new Point(39, 15);
+            label2.Name = "label2";
+            label2.Size = new Size(40, 15);
+            label2.TabIndex = 1;
+            label2.Text = "Home";
+>>>>>>> 23e8dcece0c20a7b07156da60ade9f8a8951002f
             // 
             // lblFluxo
             // 
+<<<<<<< HEAD
             lblFluxo.AutoSize = true;
             lblFluxo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblFluxo.ForeColor = SystemColors.ButtonHighlight;
@@ -82,6 +92,14 @@
             lblFluxo.Size = new Size(106, 21);
             lblFluxo.TabIndex = 6;
             lblFluxo.Text = "Fluxo de caixa";
+=======
+            label3.AutoSize = true;
+            label3.Location = new Point(94, 15);
+            label3.Name = "label3";
+            label3.Size = new Size(44, 15);
+            label3.TabIndex = 2;
+            label3.Text = "Cliente";
+>>>>>>> 23e8dcece0c20a7b07156da60ade9f8a8951002f
             // 
             // lblEmitir
             // 

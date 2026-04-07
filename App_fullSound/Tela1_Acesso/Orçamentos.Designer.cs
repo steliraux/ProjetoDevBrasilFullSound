@@ -99,7 +99,6 @@
             label2.Size = new Size(40, 15);
             label2.TabIndex = 1;
             label2.Text = "Home";
-            label2.Click += this.label2_Click;
             // 
             // label3
             // 
@@ -109,7 +108,6 @@
             label3.Size = new Size(44, 15);
             label3.TabIndex = 2;
             label3.Text = "Cliente";
-            label3.Click += this.label3_Click;
             // 
             // label4
             // 

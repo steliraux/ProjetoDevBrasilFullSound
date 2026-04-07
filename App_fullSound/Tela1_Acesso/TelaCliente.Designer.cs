@@ -243,6 +243,7 @@
             richTextBox1.Size = new Size(524, 169);
             richTextBox1.TabIndex = 19;
             richTextBox1.Text = "";
+            richTextBox1.TextChanged += richTextBox1_TextChanged;
             // 
             // button2
             // 

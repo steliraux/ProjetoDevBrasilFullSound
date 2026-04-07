@@ -9,8 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <PackageReference Include="itext7" Version="9.6.0" />
     <PackageReference Include="itext7.bouncy-castle-adapter" Version="9.6.0" />
+=======
+    <PackageReference Include="MySql.Data" Version="9.6.0" />
+>>>>>>> 81d07da62c3d714fd430859d79759d09444de7e9
   </ItemGroup>
 
   <ItemGroup>
